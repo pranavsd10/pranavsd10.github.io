@@ -42,7 +42,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="assets/images/Untitled design.png" alt="Pranav Dalvi" width="150">
+          <img src="assets/images/Untitled design.png" alt="Pranav Dalvi" width="80" style="border-radius: 20px;">
         </figure>
 
         <div class="info-content">
@@ -132,7 +132,6 @@
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
-          
 
           <li class="social-item">
             <a href="https://www.linkedin.com/in/pranav-dalvi/" class="social-link" target="_blank" rel="noopener noreferrer">
@@ -182,6 +181,7 @@
             <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
@@ -208,7 +208,6 @@
           <p>I'm a graduate student at Syracuse University and an Aspiring Data Analyst with a passion for transforming raw data into actionable insights. I thrive on crafting compelling visualizations that make complex data simple, accessible, and impactful. Driven by curiosity and creativity, I enjoy solving real-world problems through data storytelling and innovative design.</p>
 
           <p>Outside of academics, I love to cook different cuisines and to explore new places and cozy cafes.</p>
-          
         </section>
 
 
@@ -226,7 +225,7 @@
 
               <div class="service-icon-box">
                 <img src="assets/images/analytics-bar-chart-svgrepo-com.svg"
-                  alt="design icon" width="40">
+                 alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -234,6 +233,7 @@
 
                 <p class="service-item-text">
                   Extracting meaningful insights from raw data using Python, SQL, and Tableau to help businesses make data-driven decisions.
+
                 </p>
               </div>
 
@@ -250,6 +250,7 @@
 
                 <p class="service-item-text">
                   Building predictive models and leveraging machine learning techniques for real-world problem-solving.
+
                 </p>
               </div>
 
@@ -291,6 +292,7 @@
 
         </section>
 
+        
         <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
@@ -304,7 +306,11 @@
           </section>
 
         </div>
-     </article>
+
+      </article>
+
+
+
 
 
       <!--
@@ -331,9 +337,11 @@
 
             <li class="timeline-item">
 
-              <h3 class="h3 timeline-item-title">Master of Science, Information Systems </h3>
-              <h3 class="h3 timeline-item-title"> Syracuse University</h3>
+              <h4 class="h4 timeline-item-title">Master of Science, Information Systems</h4>
+              <h4 class="h4 timeline-item-title">Syracuse University</h4>
               <span>2023 — 2025 (Present)</span>
+
+              
 
             </li>
 
@@ -350,6 +358,7 @@
               <h4 class="h4 timeline-item-title">Pace Junior Science College</h4>
               <h4 class="h4 timeline-item-title">High School</h4>
               <span>2017 — 2019</span>
+
 
             </li>
 
@@ -391,7 +400,7 @@
 
               <p class="timeline-text">
                
-Streamlined data pipelines, developed ML models and dashboards, and optimized databases, driving 35% revenue growth and enhancing analytics efficiency.
+                Streamlined data pipelines, developed ML models and dashboards, and optimized databases, driving 35% revenue growth and enhancing analytics efficiency.
               </p>
 
             </li>
@@ -471,6 +480,7 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
 
             </li>
 
+
             <li class="skills-item">
 
               <div class="title-wrapper">
@@ -499,8 +509,6 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
 
         </section>
 
-        
-
       </article>
 
 
@@ -519,19 +527,71 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
 
         <section class="projects">
 
-          
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Analysis</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Tableau</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
 
           <div class="filter-select-box">
 
             <button class="filter-select" data-select>
-        
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
             </button>
-            
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Analysis</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Tableau</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
           </div>
 
           <ul class="project-list">
 
-            
+            <li class="project-item  active" data-filter-item data-category="data analysis">
               <a href="https://github.com/pranavsd10/Performance-of-S-P-500-Stock-Performance" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -546,10 +606,11 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
 
                 <p class="project-category">Data Analysis</p>
 
+
               </a>
-           
+            </li>
 
-
+            <li class="project-item  active" data-filter-item data-category="tableau">
               <a href="https://public.tableau.com/app/profile/pranav.dalvi10/viz/ElectricVehicleInsightsandAdoptioninNewYorkState/Charging" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -563,11 +624,10 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
                 <h3 class="project-title">Electric Vehicle Insights and Adoption in new york state</h3>
 
                 <p class="project-category">Tableau</p>
-
               </a>
+            </li>
 
-             
-
+            <li class="project-item  active" data-filter-item data-category="machine learning">
               <a href="https://github.com/pranavsd10/Impact-of-New-construction-on-housing-prices/tree/main" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -582,8 +642,9 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
                 <p class="project-category">Machine Learning</p>
 
               </a>
-              
+            </li>
 
+            <li class="project-item  active" data-filter-item data-category="machine learning">
               <a href="https://github.com/pranavsd10/Medical_Insurance_Cost_Recommendation/tree/main" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -599,8 +660,9 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
                 <p class="project-category">Machine Learning</p>
 
               </a>
-        
-         
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="data analysis">
               <a href="https://github.com/pranavsd10/Covid-19-Data-Analysis/tree/main" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -614,10 +676,10 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
                 <h3 class="project-title">Covid-19 Data Analysis</h3>
 
                 <p class="project-category">Data Analysis</p>
-
               </a>
-           
+            </li>
 
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://ecologyprime.com/" target="_blank" rel="noopener noreferrer" >
 
                 <figure class="project-img">
@@ -633,8 +695,9 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
                 <p class="project-category">Web Development</p>
 
               </a>
-         
+            </li>
 
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://github.com/pranavsd10/SurfTheTurf?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -648,16 +711,27 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
                 <h3 class="project-title">SurfTheTurf</h3>
 
                 <p class="project-category">Web Development</p>
-
               </a>
-    
-          
+            </li>
+
+            
 
           </ul>
 
         </section>
 
       </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      
+
 
 
 
@@ -675,28 +749,31 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280591.451931543!2d-76.24803622874178!3d43.04698676637467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f41c37fae735%3A0x5ab66cbf2b2b1eb!2sSyracuse%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus"
-              width="400" height="300" loading="lazy"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280591.451931543!2d-76.24803622874178!3d43.04698676637467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f41c37fae735%3A0x5ab66cbf2b2b1eb!2sSyracuse%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus"
+            width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
-        
 
         <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="contact.php" method="POST" class="form" data-form>
+          <form action="#" class="form" data-form>
+
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
+
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit" data-form-btn>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
+
           </form>
-          
 
         </section>
 
@@ -704,13 +781,11 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
 
     </div>
 
-
-    
-
   </main>
 
 
-  
+
+
 
 
   <!--
@@ -724,7 +799,6 @@ Streamlined data pipelines, developed ML models and dashboards, and optimized da
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
- 
 </body>
 
 </html>
