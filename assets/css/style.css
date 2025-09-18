@@ -1340,18 +1340,24 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box {
-  width: 100px;    /* Set fixed width for the image container */
-  height: 100px;   /* Set fixed height for the image container */
-  border-radius: 50%; /* Make the image circular, optional */
-  overflow: hidden; /* Prevents overflow of the image */
+/* Ensure the container is square */
+.avatar-box {
+  width: 100px;      /* Set fixed width */
+  height: 100px;     /* Set fixed height */
+  overflow: hidden;  /* Ensures image doesn't overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Ensure the image inside fills the container properly */
 .avatar-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image fills the container without distortion */
+  object-fit: cover; /* Ensures the image covers the square area without stretching */
+  border-radius: 0%; /* Remove any rounding to keep it square */
 }
+
 
 }
 
