@@ -1343,10 +1343,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   .avatar-box { border-radius: 30px; }
 
   .avatar-box img {
-  width: 80px;   /* Width of the image */
-  height: 80px;  /* Height of the image to make it square */
-  object-fit: cover; /* Ensures the image fits inside the box without stretching */
-  border-radius: 50%; /* Makes it circular, optional */
+  width: 100px;   /* Set a fixed width */
+  height: 100px;  /* Set a fixed height to maintain a square shape */
+  object-fit: cover; /* Ensures image scales to fit within the box */
+  border-radius: 0%; /* Ensures no rounding, making it a perfect square */
+}
+
 }
 
   .info-content .name { margin-bottom: 15px; }
