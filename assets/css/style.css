@@ -1342,7 +1342,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img {
+  width: 80px;   /* Width of the image */
+  height: 80px;  /* Height of the image to make it square */
+  object-fit: cover; /* Ensures the image fits inside the box without stretching */
+  border-radius: 50%; /* Makes it circular, optional */
+}
 
   .info-content .name { margin-bottom: 15px; }
 
